@@ -1,0 +1,102 @@
+// HomePage
+.homepage {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .banner img {
+        width: 98%;
+        height: 480px;
+        margin: 0 auto 25px;
+        object-fit: cover;
+    }
+
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .title::after {
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: #7AC400;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 56%;
+        margin: 0 auto;
+    }
+
+    .title:hover::after {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    // .line:hover{
+    //   animation: lineMove 1s forwards;
+    // }
+
+    // @keyframes lineMove{
+    //   0% {width: 0;}
+    //   100% {width: 125px;}
+    // }
+    .featured-categories {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        gap: 25px;
+        padding: 20px 20px 30px;
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            
+
+            .category {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                transition: background-color 0.3s ease-in-out;
+                border: 1px solid #f1e9e9f1;
+                padding: 6px;
+       
+
+                img {
+                    margin: 15px auto;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    background-color: #e9e6e6;
+                }
+            }
+        }
+    }
+
+    .top-product,
+    .new-product {
+        margin-bottom: 25px;
+        padding: 20px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        gap: 25px;
+
+        .products_ {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 10px;
+        }
+
+    }
+
+}

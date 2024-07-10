@@ -1,0 +1,51 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 80px;
+    width: 80%;
+    .review-detail {
+        display: flex;
+        gap: 25px;
+        .profile-image {
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 60%;
+            }
+        }
+
+        .review-info {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            .icon{
+                i{
+                    font-size: 13px;
+                }
+            }
+            .review-date {
+                font-size: 11px;
+            }
+
+            .review-content {
+                margin-top: 12px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .action{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .line{
+        height: 1px;
+        background-color: #d2cece;
+        width: 98%;
+        margin-top: 30px;
+    }
+
+}

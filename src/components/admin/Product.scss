@@ -1,0 +1,84 @@
+.product-admin {
+    .product-info {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        gap: 100px;
+
+        .form {
+            border: 0;
+
+            th,
+            td {
+                border: 0;
+            }
+        }
+
+        .upload-image {
+            height: 360px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            
+            .btn{
+                background-color: #262626;
+                border: 0.1px solid #262626;
+                border-radius: 0;
+          
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            .drop-file {
+                width: 100%;
+                height: 30%;
+                border: 1px dashed #666666;
+                position: relative;
+
+                input[type="file"] {
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    i {
+                        font-size: 23px;
+                    }
+                }
+
+            }
+
+            .preview {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #d3d3d3;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    padding: 12px;
+                }
+                i{
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                    cursor: pointer;
+                    color: #666666;
+                    font-size: 20px;
+                    opacity: 0.45;
+                }
+            }
+        }
+    }
+}

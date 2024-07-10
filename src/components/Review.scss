@@ -1,0 +1,41 @@
+.review-list {
+    margin: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .rating-overall {
+        background-color: #fffbf8;
+        margin: 30px 50px;
+        padding: 25px 40px;
+        display: flex;
+        gap: 130px;
+
+        .overall {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: 32px;
+                font-weight: 500;
+            }
+        }
+
+        .type-of-rating {
+            display: flex;
+            gap: 20px;
+
+            .type {
+                border: 1px solid #c9c6c3;
+                margin: auto 0;
+                text-align: center;
+                align-items: center;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .reviews {
+     
+    }
+}

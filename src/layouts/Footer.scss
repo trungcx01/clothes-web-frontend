@@ -1,0 +1,114 @@
+.footer-page{
+    margin-top: auto;
+}
+.email{
+    margin-top: 50px;
+    background-color: #197b42ee;
+}
+
+.received-message {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.7fr 1.4fr 0.9fr;
+    padding: 11px;
+    gap: 20px;
+
+    .social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;  
+        align-items: center;
+        
+        .media {
+            display: flex;
+            height: 29px;
+            width: 29px;
+            background-color: #fff; 
+            border-radius: 28px;
+            border: 1px solid rgba(143, 137, 137, 0.25);
+            i {
+                margin: auto;
+                color: #000;
+                font-size: 20px;
+            }
+            img{
+                margin: auto;
+            }
+        }
+    }
+
+    .noti-title {
+        font-size: 13px;
+        margin: auto;
+        color: #fff;
+    }
+
+    .fill-email {
+        display: flex;
+        input{
+            height: 35px;
+            width: 75%;
+            font-size: 13px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        a{
+            width: 25%;
+        }
+    }
+}
+
+.footer-line {
+    background-color: #1e1d1d;
+    .footer {
+        display: grid;
+        color: #fff;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    
+        .info {
+            margin: 5px 0px 20px;
+    
+            .line {
+                height: 2px;
+                width: 40px;
+                background-color: #7AC400;
+                margin-top: 3px;
+                margin-bottom: 15px;
+            }
+    
+            .title {
+                font-size: 15px;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+    
+            .link {
+                font-weight: 490;
+                margin-top: 9px;
+                font-size: 10px;
+            }
+    
+            .social-media {
+                display: flex;
+    
+                i {
+                    margin-right: 12px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.copyright{
+    background-color: #2d2d2d;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 500;
+}
