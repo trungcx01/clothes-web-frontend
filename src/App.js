@@ -24,9 +24,9 @@ function App() {
         <Container>
           <ScrollToUp />
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route path='/home' element={<HomePage />} />
             <Route path="/users" element={<TableUsers />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
             <Route path='/checkout' element={<Checkout />} />
             <Route path='/shop' element={<Shop />} />
